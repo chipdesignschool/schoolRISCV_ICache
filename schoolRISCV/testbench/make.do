@@ -11,7 +11,7 @@ vlog  ../src/srv_mem.sv
 vlog  ../src/sm_top.v
 vlog  testbench.v
 
-vsim  sm_testbench
+vsim -voptargs="+acc" sm_testbench
 add log -r /*
 
 
